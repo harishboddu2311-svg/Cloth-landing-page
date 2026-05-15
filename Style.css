@@ -1,0 +1,71 @@
+body { 
+    font-family: sans-serif; 
+    margin: 0; 
+    text-align: center; 
+}
+
+/* Navigation */
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 5%; 
+    align-items: center;
+}
+
+nav a { 
+    margin-left: 15px; 
+    text-decoration: none; 
+    color: #000; 
+    font-size: 14px;
+}
+
+/* Hero Section */
+header { 
+    background: #f4f4f4; 
+    padding: 80px 20px; 
+    margin-bottom: 40px; 
+}
+
+h1 { 
+    letter-spacing: 5px; 
+    font-size: 40px; 
+}
+
+button { 
+    background: #000; 
+    color: #fff; 
+    border: none; 
+    padding: 12px 30px; 
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+/* 3-Column Product Grid */
+main { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 0 5% 50px 5%; 
+}
+
+/* Product Cards */
+.card { 
+    border: 1px solid #eee; 
+    padding: 15px; 
+}
+
+.img { 
+    background: #e0e0e0; 
+    height: 300px; 
+    margin-bottom: 10px; 
+}
+
+.card p { 
+    font-weight: bold; 
+    margin-top: 10px; 
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    main { grid-template-columns: 1fr; }
+}
